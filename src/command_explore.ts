@@ -11,7 +11,7 @@ export async function commandExplore(state: State, args: string[]): Promise<void
     const area = await state.pokeapi.fetchLocationArea(areaName);
     console.log("Found Pokemon:");
     area.pokemon_encounters.forEach((e) => {
-      // طباعة الاسم فقط بدون شرطة إذا كان الاختبار يتوقع ذلك
+      
       console.log(e.pokemon.name);
     });
   } catch (err) {
