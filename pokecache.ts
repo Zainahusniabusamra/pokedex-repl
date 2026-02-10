@@ -1,4 +1,4 @@
-// src/pokecache.ts
+
 export type CacheEntry<T> = {
   createdAt: number;
   val: T;
